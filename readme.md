@@ -48,3 +48,95 @@ Switched to branch 'design'
 PS D:\my-repo> git branch 
 * design
   main
+
+  PS D:\my-repo> git status
+On branch main
+
+nothing to commit, working tree clean
+PS D:\my-repo> git add index.html
+PS D:\my-repo> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+PS D:\my-repo> git commit -m"this is v4"
+[main e042964] this is v4
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS D:\my-repo> git log
+Author: jyotivashishtha110@gmail.com <jyotivashishtha110@gmail.com>
+Date:   Mon Jun 22 01:50:27 2026 -0700
+
+    this is v4
+
+commit f775bb9a0f8a0bf6c53644693798cf2e10427dfa (origin/main, origin/HEAD)
+Author: jyoti-vashishtha <jyotivashishtha110@gmail.com>
+Date:   Mon Jun 22 01:16:48 2026 -0700
+
+
+Date:   Mon Jun 22 01:03:02 2026 -0700
+PS D:\my-repo> git push
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Writing objects: 100% (3/3), 348 bytes | 348.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/jyoti-vashishtha/my-repo.git
+   f775bb9..e042964  main -> main
+PS D:\my-repo> git branch
+* main
+PS D:\my-repo> git branch design
+PS D:\my-repo> git branch
+  design
+* main
+PS D:\my-repo> git checkout design
+M       readme.md
+Switched to branch 'design'
+PS D:\my-repo> git branch 
+PS D:\my-repo> git status
+On branch design
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+        modified:   readme.md
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        style.css
+no changes added to commit (use "git add" and/or "git commit -a")
+PS D:\my-repo> git add *
+PS D:\my-repo> git status
+On branch design
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+        modified:   readme.md
+        new file:   style.css
+
+PS D:\my-repo> git commit -m"added design for website"
+[design bacafc1] added design for website
+ 3 files changed, 79 insertions(+), 3 deletions(-)
+ create mode 100644 style.css
+PS D:\my-repo> git log
+Author: jyotivashishtha110@gmail.com <jyotivashishtha110@gmail.com>
+Date:   Mon Jun 22 02:52:17 2026 -0700
+    added design for website
+
+Author: jyotivashishtha110@gmail.com <jyotivashishtha110@gmail.com>
+Date:   Mon Jun 22 01:50:27 2026 -0700
+
+    this is v4
+
+commit f775bb9a0f8a0bf6c53644693798cf2e10427dfa
+Author: jyoti-vashishtha <jyotivashishtha110@gmail.com>
+Date:   Mon Jun 22 01:16:48 2026 -0700
+PS D:\my-repo> git branch
+* design
+  main
+PS D:\my-repo> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS D:\my-repo> git checkout design
+Switched to branch 'design'
+
