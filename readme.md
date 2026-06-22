@@ -143,7 +143,8 @@ Switched to branch 'design'
 PS D:\my-repo> git checkout main
 Switched to branch 'main'
 Your branch is up to date with 'origin/main'.
-PS D:\my-repo> git merge design 
+PS D:\my-repo> git merge design       git merge branch name
+
 Updating e042964..47c759b
 Fast-forward
  index.html |  12 +++++--
