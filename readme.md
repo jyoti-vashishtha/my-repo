@@ -140,3 +140,14 @@ Your branch is up to date with 'origin/main'.
 PS D:\my-repo> git checkout design
 Switched to branch 'design'
 
+PS D:\my-repo> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS D:\my-repo> git merge design 
+Updating e042964..47c759b
+Fast-forward
+ index.html |  12 +++++--
+ readme.md  | 108 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-
+ style.css  |  54 +++++++++++++++++++++++++++++++
+ 3 files changed, 171 insertions(+), 3 deletions(-)
+ create mode 100644 style.css
