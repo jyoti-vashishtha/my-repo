@@ -26,4 +26,11 @@ steps for git commit:- 1 git status :- use to check the status at first we se re
     3:- to get the staged changes:- git restore --worktree filename
      4:-if we did commit also wrong file:-  git reset --soft HEAD^(uncommit and keep the changes)
                                             git reset --hard HEAD^(uncommit amd discard the change)
-                                                                             
+   log options :-git log -p -2(last two commit with diff)
+   git log --stat(summary of changes)
+   git log --pretty=oneline(commit ki information one line me ho )
+   git log --pretty=format:"%h - %an,%ar : %s"
+   git log -S function_name
+
+
+   
