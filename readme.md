@@ -32,5 +32,19 @@ steps for git commit:- 1 git status :- use to check the status at first we se re
    git log --pretty=format:"%h - %an,%ar : %s"
    git log -S function_name
 
+git remote or git remote -v ;- check ki local repo or remote repo linked  or not
+git push ;- local to remote repo 
+git pull;- remote to local repo 
 
-   
+PS D:\my-repo> git branch
+* main
+PS D:\my-repo> git branch design       syntax:-git branch newbranchname
+PS D:\my-repo> git branch
+  design
+* main
+PS D:\my-repo> git checkout design
+M       readme.md
+Switched to branch 'design'
+PS D:\my-repo> git branch 
+* design
+  main
